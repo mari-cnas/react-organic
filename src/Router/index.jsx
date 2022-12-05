@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Shop from "../pages/Shop";
 import ShopDetail from "../pages/ShopDetail";
-import Cart from "../pages/Cart2";
+import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";

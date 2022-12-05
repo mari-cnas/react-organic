@@ -3,7 +3,10 @@ import GeneralBanner from "../../components/GeneralBanner";
 import GeneralButton from "../../components/GeneralButton";
 import Header from "../../components/Header";
 import bgcheck from '../../assets/bgcheck.jpg'
+import paypal from '../../assets/paypal-group-icon.png'
 import { CheckContainer } from "./style";
+import { BsCheckLg } from 'react-icons/bs';
+
 
 
 const Checkout = () => (
@@ -16,10 +19,10 @@ const Checkout = () => (
         <div class="container">
             <CheckContainer>          
                 <div className="mb-3">
-                    <p >Returning customer? Click here to login</p>
+                    <p className="border-top border-3"><BsCheckLg size={14} className="mx-3"/> Returning customer? <a href="#">Click here to login</a></p>
                 </div>    
                 <div className="mb-5">
-                    <p>Have a coupon? Click here to enter your code</p>
+                    <p className="border-top border-3"><BsCheckLg size={14} className="mx-3"/> Have a coupon? <a href="#">Click here to enter your code</a></p>
                 </div>   
                 <div class="col">
                     <h4 class="mb-3">Billing Details</h4>
@@ -107,58 +110,56 @@ const Checkout = () => (
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span className="mb-4">Your order</span>
                         </h4>
-                        <div class="row row-cols-2 border mb-3">
-                            <div class="col">
-                                <h6 class="my-0">Product name</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">Total</span>
-                            </div>
-                            <div class="col">
-                                <h6 class="my-0 text-muted">Salad x 1</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">$2.26</span>
-                            </div>
-                            <div class="col">
-                                <h6 class="my-0 text-muted">Apple x 1</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">$4.05</span>
-                            </div>
-                            <div class="col">
-                                <h6 class="my-0">Subtotal</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">$6.31</span>
-                            </div>
-                            <div class="col">
-                                <h6 class="my-0">Shipping</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">Flat rate</span>
-                            </div>
-                            <div class="col">
-                                <h6 class="my-0">Total</h6>
-                            </div>                            
-                            <div class="col d-flex justify-content-between ">
-                                <span class="text-muted">$6.31</span>
-                            </div>
-                        </div>
+                        <table className="table table-bordered mb-5 align-middle">
+                        <thead >
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Salad x 1</td>
+                                <td>$2.26</td>
+                            </tr>
+                            <tr>
+                                <td>Apple x 1</td>
+                                <td>$4.05</td>
+                            </tr>
+                        </tbody>
+                        <tfoot className="fw-bold">
+                            <tr>
+                                <td >Subtotal</td>
+                                <td>$6.31</td>
+                                </tr>
+                                <tr>
+                                <td >Shipping</td>
+                                <td>Flat rate</td>
+                                </tr>
+                                <tr>
+                                <td >Total</td>
+                                <td>$6.31</td>
+                            </tr>
+                        </tfoot>
+                    </table>
                     </div>
                 </div>
                 <div class="my-3">
-                    <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />
-                    <label class="form-check-label" for="credit">Check payments</label>
-                    </div>
-                    <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required/>
-                    <label class="form-check-label" for="credit">Paypal</label>
-                    </div>
-                </div>
-                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                    <div class="d-flex">
+                        <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />                       
+                        </div>
+                        <div>
+                            <label class="form-check-label" for="credit">Check payments</label>
+                            <p className="text-muted px-3 my-4">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        </div>
+                        </div>
                 <div className="mb-5">
+                    </div>
+                    <div class="form-check my-5">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required/>
+                    <label class="form-check-label" for="credit">Paypal <img src={paypal} alt="Payment methods" className="mx-3"/> Whats is Paypal?</label>
+                    </div>              
                 <GeneralButton
                 title="PLACE ORDER"/>   
                 </div>            

@@ -6,32 +6,22 @@ export default createGlobalStyle`
     padding:0;
     box-sizing: border-box;
  
-}
-
-/* unvisited link */
+    /* unvisited link */
 a:link {
-  color:  #333;
-  text-decoration: none;
+    text-decoration: none;
+    color:  #666;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:  #666;
+  }
+
 }
 
-/* visited link */
-a:visited {
-  color:  #333;
-}
-
-/* mouse over link */
-a:hover {
-  color: grey;
-}
-
-/* selected link */
-a:active {
-  color: #0000FF;
-}
-
-/*.container{
-  width: 100%;
-}*/
+html, body, #root{
+        min-height: 100vh;
+    }
 
 @media (max-width:1199px) {
   .container {
@@ -62,10 +52,6 @@ a:active {
   }
   
 }
-
-
-
-
 
 
 .divisiont{

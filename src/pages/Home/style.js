@@ -14,6 +14,3 @@ h2{
 
 }
 `
-
-/*border-bottom-style:double;
-    border-bottom-width:4px;*/

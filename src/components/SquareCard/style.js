@@ -5,6 +5,7 @@ export const SquareCardContainer = styled.div`
 
 border:1px solid #d3d3d3;
 
+
 #stitle{
     font-family: playfair display,serif;
     font-size: 23px;
@@ -20,23 +21,17 @@ border:1px solid #d3d3d3;
     color: #666;
 }
 
-
-`;
-
-export const IconContainer = styled.div`
-color:white;
-border-color:white;
-
-
 &:hover{
     color:grey;
+    svg{
+    color:grey;
+}
     
 }
 
-span:hover{
-    border: 1px solid #dddddd;
-}
 `;
+
+
 
 export const ColoredDiv = styled.div`
 
@@ -45,4 +40,27 @@ background-color:${(props)=> props.backgroundColor}
 
 `;
 
+export const VegetableImg = styled.div`
 
+background-image:${(props) => `url(${props.image})`};
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 250px;
+
+ svg  {
+color:white;
+border-color:white;
+//z-index:5;
+position: relative;
+bottom:-220px;
+left:190px;
+
+
+
+&:hover{
+    border: 1px solid #dddddd;
+}
+
+ }
+`;

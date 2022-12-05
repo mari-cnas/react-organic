@@ -10,8 +10,9 @@ import vegetable from '../../assets/green.png'
 import fruit from '../../assets/orange.png'
 import meat from '../../assets/meat.png'
 import brocolis from '../../assets/brocolis.png'
+import brasil from '../../assets/brasil.jpg'
 import lemon from '../../assets/lemon.jpg'
-import spinach from '../../assets/spinach.jpg'
+import apple from '../../assets/apple.jpg'
 import onion from '../../assets/onion.jpg'
 import bean from '../../assets/bean.jpg'
 import temperos from '../../assets/temperos.jpg'
@@ -55,7 +56,8 @@ const Home = () => (
                     image={brocolis}
                     title="Brocolis"
                     price="$2.00"
-                    backgroundColor="white"
+                        backgroundColor="white"
+                        align="start"
                     />
                 </div>
                 <div className="col my-4 px-5">
@@ -68,9 +70,9 @@ const Home = () => (
                 </div>
                 <div className="col my-4 px-5">
                     <SquareCard
-                     image={spinach}
-                     title="Spinach"
-                     price="$3.20"
+                     image={apple}
+                     title="Apple"
+                     price="$4.05"
                      backgroundColor="white"
                      />
                 </div>
@@ -92,9 +94,9 @@ const Home = () => (
                 </div>
                 <div className="col my-4 px-5">
                     <SquareCard
-                     image={onion}
-                     title="Onion"
-                     price="$2.00"
+                     image={brasil}
+                     title="Brasil"
+                     price="$1.55"
                      backgroundColor="white"
                      />
                 </div>

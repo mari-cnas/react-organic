@@ -1,9 +1,11 @@
 import Navbar from '../Navbar';
+import { HeaderBg } from './style';
+
 
 const Header =() => (
-    <header>
-      <Navbar />
-    </header>
+    <HeaderBg className="d-flex justify-content-center py-3 " >
+      <Navbar/>
+    </HeaderBg>
 
 );
 

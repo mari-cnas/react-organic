@@ -2,14 +2,21 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.section`
 
-
 line-height:40px;
 
 .list{
     list-style: none;
 }
 
+li,a,p{
+    color: #666;
 
+}
+
+h5{
+    color: black;
+
+}
 
 background-color: #edf2f5;
 `
@@ -28,6 +35,10 @@ button{
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
 
 }
 

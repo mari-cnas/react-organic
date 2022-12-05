@@ -1,5 +1,5 @@
 import { BannerContainer } from './style';
-/*import { Link } from "react-router-dom";*/
+
 
 
 const GeneralBanner = ({title1,title2,backgroundImage,children}) => (
@@ -14,6 +14,3 @@ const GeneralBanner = ({title1,title2,backgroundImage,children}) => (
 
 
 export default GeneralBanner;
-
-/*<img src={image} alt="logo" className=" img-fluid px-3 "/>
-<button type="button" class="viewMorebtn">{btntxt}</button>*/

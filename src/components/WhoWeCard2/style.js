@@ -13,6 +13,28 @@ p{
     color: #666;
     font-size: 14px;
     font-weight: 400;
+    line-height:26px;
+}
+
+.top-and-bottom {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &::after {
+  content:'';
+  height: 2px;
+    width: 70px;
+    background-color: #97ae76;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
 }
 `;
 
+export const CardImg = styled.div`
+background-image: url(${(props) => props.backgroundImage});
+background-size:cover;
+height:200px;
+`;

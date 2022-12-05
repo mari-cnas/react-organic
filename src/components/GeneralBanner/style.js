@@ -15,12 +15,9 @@ h3{
 
 background-image: url(${(props)=> props.backgroundImage});
 background-color: rgba(0, 0, 0, 0.5);
-background-size: 100%;
 background-blend-mode: darken;
+background-size: 100%;
 height:250px;
 
 `;
 
-/*
-background-image:${(props)=> props.backgroundImage}
-background-image: url(${leaves});*/

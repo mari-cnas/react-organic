@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 
 export const ButtonContainer = styled.button`
-
-
     background-color: #97ae76;
     color: #fff;
     border-radius: 50%;
@@ -11,5 +9,4 @@ export const ButtonContainer = styled.button`
     font-size: 14px;
     padding: 0 5px;
     align-self: center;
-
 `;

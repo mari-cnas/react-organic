@@ -17,26 +17,28 @@ import leaves from '../../assets/folhas2.jpg'
 const About = () => (
     <AboutContainer>
         <Header/>
-        <main>     
+        <main > 
             <GeneralBanner className="mb-5 pb-5"
             title1 ="About Us"
             backgroundImage={leaves}
             />   
-            <div className="row row-cols-1 ">
-                <div className="col">
-                    <WhoWeCard1
-                    image={handsare}
-                    title="Who We Are"
-                    description="We are a manufacturing base of organic food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar."
-                    />
-                </div>
-                <div className="col mb-5">
-                    <WhoWeCard2
-                    image={handsdo}
-                    title="Who We Are"
-                    description="We provide all kinds of organic products. Produced on our farm, the products are always fresh, multi-vitamins, rich variety for your family. With our organic food will bring delicious meals to your family.
-                    Vestibulum eu nisl vitae tortor feugiat aliquet finibus in libero. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam pellentesque ullamcorper."
-                    />
+            <div className="container">
+                <div className="row row-cols-1 ">
+                    <div className="col col-md-12">
+                        <WhoWeCard1
+                        image={handsare}
+                        title="Who We Are"
+                        description="We are a manufacturing base of organic food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar."
+                        />
+                    </div>
+                    <div className="col col-md-12 mb-5">
+                        <WhoWeCard2
+                        image={handsdo}
+                        title="What We Do"
+                        description="We provide all kinds of organic products. Produced on our farm, the products are always fresh, multi-vitamins, rich variety for your family. With our organic food will bring delicious meals to your family.
+                        Vestibulum eu nisl vitae tortor feugiat aliquet finibus in libero. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam pellentesque ullamcorper."
+                        />
+                    </div>
                 </div>
             </div>
             <CountBanner/>   

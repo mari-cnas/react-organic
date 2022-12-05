@@ -1,49 +1,54 @@
-import {NavContainer } from './style';
+import { MenuMobile, MenuOverlay, NavSection } from './style';
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
+import logor from '../../assets/logor.png'
+import { AiOutlineShoppingCart,AiOutlineClose } from 'react-icons/ai'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { useState } from 'react';
 
 
-const Navbar =() => (
-        <NavContainer >
-            <div className="container" >
-                <div className=" navbar navbar-expand-lg">
-                    <img src={logo} alt="logo" className="px-3"/>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse  " id="navbarNavAltMarkup">
-                        <div className="d-flex justify-content-between">
-                            <div className="navbar-nav d-flex me-5">
-                                <Link to="/" className="px-4">HOME</Link>
-                                <Link to="/quem-somos" className="px-4">ABOUT</Link>
-                                <Link to="/produtos" className="px-4">SHOP</Link>
-                                <Link to="/checkout" className="px-4">CHECKOUT</Link>
-                                <Link to="/contact" className="px-4">CONTACT</Link>
-                            </div>
-                            <div className="d-flex ">
-                                <aside className="d-flex px-4">
-                                    <div className="d-flex nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            USD
-                                        </a>
-                                        <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-divider">|</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>   
-                                    <Link to="/carrinho" className="ps-4 ms-4"><AiOutlineShoppingCart /></Link>           
-                                </aside>
-                            </div>
-                        </div>
-                    </div>
+
+const Navbar = () => {
+    const [isMenuOpened, setIsMenuOpened] = useState(false);
+    return (
+    <>
+            <MenuOverlay isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)} className="d-flex d-md-none position-fixed h-100 w-100" />
+            <div className="container d-flex align-items-center justify-content-between w-100 d-block d-md-none">
+                <img src={logor} alt="logo" className="img-fluid mx-3 mt-2" style={{ height: '30px' }} />  
+                <div className="d-flex align-items-end justify-content-between mx-3">
+                    <Link to="/carrinho" className="me-2"><AiOutlineShoppingCart size={18}/></Link> 
+                    <GiHamburgerMenu type="button" onClick={() => setIsMenuOpened(true)} size={18}  />
                 </div>
             </div>
-        </NavContainer>
-    
-
-);
-
+            <MenuMobile isMenuOpened={isMenuOpened} className="d-flex flex-column d-md-none position-fixed bg-white">        
+            <NavSection className="container w-100">               
+                    <div className=" d-flex flex-column justify-content-center mb-3">     
+                            <AiOutlineClose type="button" onClick={() => setIsMenuOpened(false)} className="align-self-end"/>
+                            <img src={logor} alt="logo" className="align-self-center" style={{height:'30px'}}/>                           
+                        </div>                           
+                        <div className="d-flex flex-column w-100">                                         
+                        <Link to="/" className="px-5 mb-2">HOME</Link>
+                        <Link to="/quem-somos" className="px-5 mb-2">ABOUT</Link>
+                        <Link to="/produtos" className="px-5 mb-2">SHOP</Link>
+                        <Link to="/contact" className="px-5 mb-2">CONTACT</Link> 
+                    </div>
+            </NavSection>              
+            </MenuMobile>
+            <NavSection className="w-100 d-none d-md-flex">     
+                <div className="container d-flex">
+                    <div className="d-flex justify-content-between align-items-center w-100">
+                        <div>
+                        <img src={logo} alt="logo" className="me-5"/>   
+                        <Link to="/" className="px-4">HOME</Link>
+                        <Link to="/quem-somos" className="px-4">ABOUT</Link>
+                        <Link to="/produtos" className="px-4">SHOP</Link>
+                        <Link to="/contact" className="px-4">CONTACT</Link> 
+                        </div>
+                        <Link to="/carrinho" className="ps-4 ms-4"><AiOutlineShoppingCart size={18}/></Link> 
+                    </div>
+                </div>
+            </NavSection>
+    </>
+)
+}
 export default Navbar;
