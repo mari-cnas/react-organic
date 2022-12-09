@@ -9,7 +9,7 @@ const FollowBanner = () => (
         <Banner2 className="w-100 d-flex justify-content-center align-items-center">
         <GeneralButton 
             title="FOLLOW US">
-                <AiOutlineInstagram className="me-2 my-3"/>
+                <AiOutlineInstagram />
             </GeneralButton>  
         </Banner2>
          

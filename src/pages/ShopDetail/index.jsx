@@ -12,7 +12,7 @@ import networking from '../../assets/networking.png'
 import SquareButton from "../../components/SquareButton";
 import {AiFillHeart} from 'react-icons/ai'
 import bgshop from '../../assets/bgshop.jpg'
-import { HeartBtn, ShopTitle } from "./style";
+import { HeartBtn, ShopContainer, ShopTitle } from "./style";
 import { Link } from "react-router-dom";
 
 
@@ -22,8 +22,8 @@ const ShopDetail = () => (
         <GeneralBanner
         title1="Shop Detail"
         backgroundImage={bgshop}/>
-        <main className="container">
-            <div className="row mb-5">
+        <ShopContainer className="container">
+            <div className="row flex-column flex-lg-row mb-5">
                 <div className=" col">
                     <div className="row">
                         <div className="col col-md-12"><img src={salad} alt="logo" className=" img-fluid w-100 mb-3" /></div>
@@ -50,13 +50,13 @@ const ShopDetail = () => (
                         <HeartBtn><AiFillHeart size={22}/></HeartBtn>
                     </div>
                     <hr/>
-                    <p>Categories: Food</p>
-                    <p>Tags: Natural, Organic, Health, Green, Vegetable</p>
-                    <p>ID: A203</p>
+                    <p>Categories: <a href="#">Food</a></p>
+                    <p>Tags: <a href="#">Natural</a>, <a href="#">Organic</a>, <a href="#">Health</a>, <a href="#">Green</a>, <a href="#">Vegetable</a></p>
+                    <p>ID: <a href="#">A203</a></p>
                     <img src={networking} alt="logo" className=" img-fluid "/>
                 </div>
             </div>
-            <div className="row">
+            <div className="row flex-column flex-lg-row">
                 <div className=" col">
                     <p>Description</p>
                     <ul>
@@ -145,7 +145,7 @@ const ShopDetail = () => (
                         </Link>
                 </div>
             </div>
-        </main>
+        </ShopContainer>
         <Footer/>
         
             

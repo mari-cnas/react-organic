@@ -6,6 +6,11 @@ export const CheckContainer = styled.main`
 p{
     background-color: #f5f5f5;
     line-height:50px;
+    font-size:14px;
+    white-space: nowrap;
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 a:link {
@@ -24,8 +29,13 @@ h4{
 
 table{
     border: 1px solid #ccc;
-    padding: 14px 30px;
     font-size: 15px;
     text-align: left;
 }
+
+table th, table td{
+        padding: 15px; 
+    }
+
+
 `

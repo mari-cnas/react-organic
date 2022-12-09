@@ -39,9 +39,9 @@ const Shop = () => (
                             <option value="Sort by price: high to low">Sort by price: high to low</option>
                         </Select> 
                 </div>
-                <div className="row mt-5">
+                <div className="row row-cols-md-4 g-5 mt-5">
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={salad}
                         title="Salad"
@@ -52,7 +52,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className="w-100">
                         <SquareCard
                         image={onion}
                         title="Onion"
@@ -63,7 +63,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex ">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={bean}
                         title="Bean"
@@ -74,7 +74,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={lemon}
                         title="Lemon"
@@ -84,10 +84,9 @@ const Shop = () => (
                         />
                         </Link>
                     </div>
-                </div>
-                <div className="row">
+              
                 <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className="w-100">
                         <SquareCard
                         image={spinach}
                         title="Spinach"
@@ -99,7 +98,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className="w-100">
                         <SquareCard
                         image={apple}
                         title="Apple"
@@ -110,7 +109,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className="w-100">
                         <SquareCard
                         image={broccoli}
                         title="Broccoli"
@@ -121,7 +120,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className="w-100">
                         <SquareCard
                         image={brasil}
                         title="Brasil"
@@ -131,10 +130,9 @@ const Shop = () => (
                         />
                         </Link>
                     </div>
-                </div>
-                <div className="row">
+             
                 <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={pear}
                         title="Pear"
@@ -145,7 +143,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={tomanto}
                         title="Tomanto"
@@ -156,7 +154,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={melon}
                         title="Bitter Melon"
@@ -167,7 +165,7 @@ const Shop = () => (
                         </Link>
                     </div>
                     <div className="col d-flex">
-                        <Link to="/produtos/*" className="px-4 w-100">
+                        <Link to="/produtos/*" className=" w-100">
                         <SquareCard
                         image={cucumber}
                         title="Cucumber"

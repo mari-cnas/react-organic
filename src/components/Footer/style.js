@@ -13,6 +13,9 @@ li,a,p{
 
 }
 
+li,p{
+    white-space: nowrap
+}
 h5{
     color: black;
 

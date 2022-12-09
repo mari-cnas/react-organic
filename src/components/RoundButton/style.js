@@ -7,6 +7,6 @@ export const ButtonContainer = styled.button`
     border-radius: 50%;
     border: 2px solid #97ae76;
     font-size: 14px;
-    padding: 0 5px;
-    align-self: center;
+    padding: 0 7px;
+
 `;

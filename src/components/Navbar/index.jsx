@@ -38,13 +38,13 @@ const Navbar = () => {
                 <div className="container d-flex">
                     <div className="d-flex justify-content-between align-items-center w-100">
                         <div>
-                        <img src={logo} alt="logo" className="me-5"/>   
+                        <img src={logo} alt="logo" className="me-2 me-lg-5"/>   
                         <Link to="/" className="px-4">HOME</Link>
                         <Link to="/quem-somos" className="px-4">ABOUT</Link>
                         <Link to="/produtos" className="px-4">SHOP</Link>
                         <Link to="/contact" className="px-4">CONTACT</Link> 
                         </div>
-                        <Link to="/carrinho" className="ps-4 ms-4"><AiOutlineShoppingCart size={18}/></Link> 
+                        <Link to="/carrinho"><AiOutlineShoppingCart size={18}/></Link> 
                     </div>
                 </div>
             </NavSection>

@@ -4,21 +4,21 @@ import { BannerContainer } from './style';
 
 const CountBanner = () => (
     <BannerContainer className="d-flex justify-content-center align-items-center">
-        <div className="row container ">
-            <div className="col-3">
-                <h2 className="py-3">154</h2>
+        <div className="row row-cols-2 row-cols-lg-4 container g-3">
+            <div className="col">
+                <h2>154</h2>
                 <h3>HAPPY CLIENT</h3>
             </div>
-            <div className="col-3">
-                <h2 className="py-3">234</h2>
+            <div className="col">
+                <h2>234</h2>
                 <h3>PRODUCTS IN STORE</h3>
             </div>
-            <div className="col-3">
-                <h2 className="py-3">32</h2>
+            <div className="col">
+                <h2 >32</h2>
                 <h3>YEAR OF EXPERIENCE </h3>
             </div>
-            <div className="col-3">
-                <h2 className="py-3">126</h2>
+            <div className="col">
+                <h2 >126</h2>
                 <h3>RUNNING PROJECTS</h3>
             </div>                  
         </div>   

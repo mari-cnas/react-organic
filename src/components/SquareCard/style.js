@@ -44,18 +44,16 @@ export const VegetableImg = styled.div`
 
 background-image:${(props) => `url(${props.image})`};
 background-size: cover;
-background-position: center center;
-width: 100%;
-height: 250px;
+background-position: bottom ;
+aspect-ratio: 1 / 1;
+display:flex;
+align-items:end;
+justify-content:end;
+width:100%;
 
  svg  {
 color:white;
 border-color:white;
-//z-index:5;
-position: relative;
-bottom:-220px;
-left:190px;
-
 
 
 &:hover{
@@ -64,3 +62,5 @@ left:190px;
 
  }
 `;
+
+

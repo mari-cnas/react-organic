@@ -28,14 +28,14 @@ const Checkout = () => (
                     <h4 class="mb-3">Billing Details</h4>
                     <form class="needs-validation" novalidate/>
                     <div class="row g-3">
-                        <div class="col-sm-6">
+                        <div class="col-12 col-lg-6">
                             <label for="firstName" class="form-label">First name</label>
                             <input type="text" class="form-control" id="firstName" placeholder="" value="" required/>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-12 col-lg-6">
                             <label for="lastName" class="form-label">Last name</label>
                             <input type="text" class="form-control" id="lastName" placeholder="" value="" required/>
                             <div class="invalid-feedback">
@@ -49,21 +49,21 @@ const Checkout = () => (
                                 Please enter your shipping address.
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
                             <input type="email" class="form-control" id="email" placeholder=""/>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="phone" class="form-label">Phone <span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="phone" placeholder=""/>
                             <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
+                                Please enter a valid phone for shipping updates.
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="country" class="form-label">Country</label>
                             <select class="form-select" id="country" required>
                                 <option value="">Choose...</option>
@@ -73,7 +73,7 @@ const Checkout = () => (
                                 Please select a valid country.
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="address" class="form-label">Address</label>
                             <input type="text" class="form-control" id="address" placeholder="" required/>
                             <div class="invalid-feedback">
@@ -84,14 +84,14 @@ const Checkout = () => (
                             <label for="town" class="form-label">Town/City <span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="town" placeholder=""/>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="zip" class="form-label">Zip</label>
                             <input type="text" class="form-control" id="zip" placeholder="" required/>
                             <div class="invalid-feedback">
                                 Zip code required.
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <label for="state" class="form-label">State</label>
                             <select class="form-select" id="state" required>
                                 <option value="">Choose...</option>
@@ -110,7 +110,7 @@ const Checkout = () => (
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span className="mb-4">Your order</span>
                         </h4>
-                        <table className="table table-bordered mb-5 align-middle">
+                        <table className="table table-bordered mb-5 align-middle " >
                         <thead >
                             <tr>
                                 <th scope="col">Product</th>
@@ -144,18 +144,18 @@ const Checkout = () => (
                     </table>
                     </div>
                 </div>
-                <div class="my-3">
-                    <div class="d-flex">
+                <div class="my-5">
+                    <div class="d-flex mb-4">
                         <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />                       
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />                       
+                            </div>
+                            <div className="d-flex flex-column">
+                                <label class="form-check-label" for="credit">Check payments</label>              
+                            </div>
+                       </div>
+                    <div className="mb-5 ms-3 text-muted">
+                            <p >Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode. </p>
                         </div>
-                        <div>
-                            <label class="form-check-label" for="credit">Check payments</label>
-                            <p className="text-muted px-3 my-4">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
-                        </div>
-                        </div>
-                <div className="mb-5">
-                    </div>
                     <div class="form-check my-5">
                     <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required/>
                     <label class="form-check-label" for="credit">Paypal <img src={paypal} alt="Payment methods" className="mx-3"/> Whats is Paypal?</label>

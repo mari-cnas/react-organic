@@ -50,8 +50,8 @@ const Home = () => (
             <div className="divisiont">
                 <h2 className="my-5">Our Products</h2>
             </div>
-            <div className="row row-cols-md-3 flex-wrap">
-                <div className="col my-4 px-5">
+            <div className="row row-cols-md-2 row-cols-lg-3 g-5 my-5">
+                <div className="col d-flex">
                     <SquareCard
                     image={brocolis}
                     title="Brocolis"
@@ -60,7 +60,7 @@ const Home = () => (
                         align="start"
                     />
                 </div>
-                <div className="col my-4 px-5">
+                <div className="col d-flex">
                     <SquareCard
                      image={bean}
                      title="Bean"
@@ -68,7 +68,7 @@ const Home = () => (
                      backgroundColor="white"
                      />
                 </div>
-                <div className="col my-4 px-5">
+                <div className="col d-flex">
                     <SquareCard
                      image={apple}
                      title="Apple"
@@ -76,7 +76,7 @@ const Home = () => (
                      backgroundColor="white"
                      />
                 </div>
-                <div className="col my-4 px-5">
+                <div className="col d-flex">
                     <SquareCard
                      image={lemon}
                      title="Lemon"
@@ -84,7 +84,7 @@ const Home = () => (
                      backgroundColor="white"
                      />
                 </div>
-                <div className="col my-4 px-5">
+                <div className="col d-flex">
                     <SquareCard
                      image={onion}
                      title="Onion"
@@ -92,7 +92,7 @@ const Home = () => (
                      backgroundColor="white"
                      />
                 </div>
-                <div className="col my-4 px-5">
+                <div className="col d-flex">
                     <SquareCard
                      image={brasil}
                      title="Brasil"
@@ -105,26 +105,23 @@ const Home = () => (
             <ViewBanner/>
         <main className="container flex-grow-1">
             <h2 className="my-5">The Blog</h2>
-            <div className="row row-cols-md-3 my-5">
-                <div className="col">
+            <div className="row row-cols-1 row-cols-lg-3 my-5 g-5">
+                <div className="col ">
                     <BlogCardTop
                     image={temperos}
-                    imgposition="top"
                     title="Beauty With Organic Products"
                     description="Etiam at varius diam, id blandit erat. Suspendisse eget volutpat risus, id venenatis justo. Fusce elementum ligula elit. Duis ultricies ultrices nibh, a tincidunt risus pretium eleifend."
                     />
                 </div>
-                <div className="col">
+                <div className="col ">
                     <BlogCardBottom
                      image={verdes}
-                     imgposition="bottom"
                      title="Green Vegetables Are Good For Healthy"
                      description="Vivamus consectetur nulla mattis lorem ultricies, ac congue tellus consectetur. Vivamus sed purus volutpat, varius mauris id, tempus augue. Nuefd ans congue liquam."
                      />
                 </div>
-                <div className="col">
+                <div className="col ">
                     <BlogCardTop image={sopa}
-                    imgposition="top"
                     title="Refreshing Green Smoothie Recipe"
                     description="Praesent efficitur felis eu luctus vestibulum. In hac habitasse platea dictumst. Nam egestas eu nisl ac pellentesque. Duis congue suscipit lorem vel congue."
                     />

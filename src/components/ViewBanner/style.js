@@ -11,26 +11,35 @@ height:500px;
 background-blend-mode: darken;
 
 
-#txtbanner1{
+h3{
     font-family: roboto,serif;
     background-color: transparent;
     color: white;
     font-size: 23px;
     font-weight: 400;
     text-align: center;
+    text-shadow: 0.05em 0.05em black
    
 
 }
-#txtbanner2{
+h2{
     font-family: playfair display,serif;
     background-color: transparent;
     color: white;
     font-size: 70px;
     font-weight: 400;
     text-align: center;
+    text-shadow: 0.05em 0.05em black
   
 
 }
 
+@media (max-width:768px) {
+  h2{
+    font-size: 35px;
+    
+  }
+  height:250px;
+}
 `;
 

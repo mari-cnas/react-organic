@@ -19,7 +19,7 @@ const Contact = () => (
         title1="Blog detail"
         backgroundImage={bgcontact}/>
         <main className="container mb-5">
-            <CardContainer className="row row-cols-md-3 row-cols-sm-1">
+            <CardContainer className="row row-cols-1 row-cols-lg-3 ">
                 <div className="col">
                     <CardContact
                     icon={<FiMapPin size={60}/>}

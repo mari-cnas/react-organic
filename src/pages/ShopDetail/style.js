@@ -23,3 +23,15 @@ export const ShopTitle = styled.h2`
     text-align: start;
 
 `;
+
+
+export const ShopContainer = styled.main`
+
+
+a {
+    text-decoration: none;
+    color:  #97ae76;
+  }
+
+`;
+

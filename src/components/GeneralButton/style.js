@@ -8,8 +8,8 @@ export const ButtonContainer = styled.button`
     border-radius: 25px;
     border: 2px solid #97ae76;
     font-size: 14px;
-    padding: 0 37px;
-    line-height: 46px;
+    padding-left:37px;
+    padding-right:37px;
     align-self: center;
 
 `;
