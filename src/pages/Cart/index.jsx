@@ -114,9 +114,9 @@ const Cart = () => (
                     </tbody>                 
                 </SmallTable>
                 <div className="border mb-5 px-4 py-3 d-block d-lg-none">
-                    <div className="d-flex mb-3 ">
-                        <button className="whitebtn w-100 px-0 py-2 me-4" >Coupon Code</button>
-                        <button className="greenbtn w-100 px-0 py-2 ">APPLY COUPON</button>
+                    <div className="d-flex flex-column flex-md-row  ">
+                        <button className="whitebtn w-100 px-0 py-2 mb-3 me-md-2" >Coupon Code</button>
+                        <button className="greenbtn w-100 px-0 py-2 mb-3 ms-md-2">APPLY COUPON</button>
                     </div>
                     <div className="d-flex">
                     <button  className="whitebtn w-100 px-0 py-2">UPDATE CART</button>

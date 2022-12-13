@@ -10,6 +10,7 @@ export const BlogCardContainer = styled.div`
     font-weight: 400;
     border-style:none;
     border-radius: 0px;
+    
 
 h5{
     font-family: playfair display,serif;
@@ -20,5 +21,20 @@ h5{
 .card-text{
     line-height:1.78571;
 }
+`;
+
+export const ImgBox = styled.div`
+   background-image: url(${(props) => props.image});
+   background-size:cover;
+   background-position:center;
+   
+ 
+   @media (min-width:320px) { 
+    height:100%;}
+
+
+    @media (min-width:1024px) { 
+        height:60%;
+        width:auto;}
 `;
 

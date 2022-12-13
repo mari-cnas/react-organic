@@ -52,7 +52,7 @@ const Contact = () => (
                         Valid first name is required.
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-sm-6">
                     <input type="email" className="form-control" id="email" placeholder="Your email"/>
                     <div className="invalid-feedback">
                         Please enter a valid email address for shipping updates.

@@ -28,7 +28,7 @@ const Shop = () => (
         backgroundImage={bgshop}/>
         <main>
             <div className="container mb-5">
-                <div className="d-flex divisionb justify-content-between">
+                <div className="d-flex divisionb justify-content-between align-items-baseline">
                     <p>Showing 1 - 12 of 30 results</p>
                     <Select name="sort">
                             <option value="Default sorting">Default sorting</option>
@@ -39,7 +39,7 @@ const Shop = () => (
                             <option value="Sort by price: high to low">Sort by price: high to low</option>
                         </Select> 
                 </div>
-                <div className="row row-cols-md-4 g-5 mt-5">
+                <div className="row row-cols-1 row-cols-md-4 g-5 mt-5">
                     <div className="col d-flex">
                         <Link to="/produtos/*" className=" w-100">
                         <SquareCard

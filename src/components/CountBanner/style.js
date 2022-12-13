@@ -7,7 +7,7 @@ background-image: url(${cogumelos});
 background-color: rgba(0, 0, 0, 0.7);
 background-size: 100%;
 background-blend-mode: darken;
-height:250px;
+
 
 
 h2{

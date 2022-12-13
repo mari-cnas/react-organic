@@ -21,3 +21,13 @@ h5{
 }
 `;
 
+export const ImgBox = styled.div`
+   background-image: url(${(props) => props.image});
+   background-size:cover;
+   background-position:center;
+   width:40%;
+ 
+    @media (min-width:1024px) { 
+        height:60%;
+        width:auto;}
+`;

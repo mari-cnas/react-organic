@@ -5,7 +5,7 @@ import { AiFillHeart} from 'react-icons/ai'
 
 
 const SquareCard =({image,title,align='start',price,backgroundColor,children}) => (
-    <SquareCardContainer className=" w-100">      
+    <SquareCardContainer className=" w-100 ">      
             <div className="card-body d-flex flex-column align-items-center ">
                 <VegetableImg image={image} >
                     <div className="d-flex justify-content-end pe-3">

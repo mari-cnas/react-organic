@@ -148,18 +148,22 @@ const Checkout = () => (
                     <div class="d-flex mb-4">
                         <div class="form-check">
                             <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />                       
-                            </div>
-                            <div className="d-flex flex-column">
-                                <label class="form-check-label" for="credit">Check payments</label>              
-                            </div>
-                       </div>
+                        </div>                         
+                        <label class="form-check-label" for="credit">Check payments</label>              
+                    </div>
                     <div className="mb-5 ms-3 text-muted">
                             <p >Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode. </p>
+                    </div>
+                    <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center mb-4">
+                    <div class="d-flex">
+                        <div class="form-check ">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required />
                         </div>
-                    <div class="form-check my-5">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required/>
-                    <label class="form-check-label" for="credit">Paypal <img src={paypal} alt="Payment methods" className="mx-3"/> Whats is Paypal?</label>
-                    </div>              
+                        <label class="form-check-label mb-2" for="credit">Paypal</label>
+                        
+                        </div>
+                        <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center ps-2" > <img src={paypal} alt="Payment methods" className=" my-2 me-2"/> Whats is Paypal?</div>    
+                        </div>    
                 <GeneralButton
                 title="PLACE ORDER"/>   
                 </div>            

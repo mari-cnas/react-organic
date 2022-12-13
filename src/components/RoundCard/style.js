@@ -17,4 +17,5 @@ h3{
 
 export const RoundImg = styled.img`
 border-radius:50%;
+transform: scale(0.9);
 `;

@@ -1,10 +1,9 @@
 import { BannerContainer } from './style';
-/*import { Link } from "react-router-dom";*/
 
 
 const CountBanner = () => (
-    <BannerContainer className="d-flex justify-content-center align-items-center">
-        <div className="row row-cols-2 row-cols-lg-4 container g-3">
+    <BannerContainer className="d-flex justify-content-center align-items-center py-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 container g-3">
             <div className="col">
                 <h2>154</h2>
                 <h3>HAPPY CLIENT</h3>

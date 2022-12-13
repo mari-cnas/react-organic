@@ -4,8 +4,9 @@ import GeneralButton from '../GeneralButton';
 
 
 const FollowBanner = () => (
-    <BannerContainer className="d-flex">
-    <Banner1 className="w-100"/>
+    <div className=" d-none d-md-block">
+        <BannerContainer className="d-flex">
+        <Banner1 className="w-100"/>
         <Banner2 className="w-100 d-flex justify-content-center align-items-center">
         <GeneralButton 
             title="FOLLOW US">
@@ -13,11 +14,11 @@ const FollowBanner = () => (
             </GeneralButton>  
         </Banner2>
          
-    <Banner3 className="w-100" />
-    </BannerContainer>
+            <Banner3 className="w-100" />
+            </BannerContainer>
+    </div>
 );
 
 
 export default FollowBanner;
 
-            

@@ -1,5 +1,5 @@
 
-import { HomeContainer } from "./style";
+import { Banner1, HomeContainer } from "./style";
 import MainBanner from "../../components/MainBanner";
 import Footer from "../../components/Footer";
 import SquareCard from "../../components/SquareCard";
@@ -20,14 +20,16 @@ import sopa from '../../assets/sopa.jpg'
 import verdes from '../../assets/verdes.jpg'
 import BlogCardTop from "../../components/BlogCardTop";
 import BlogCardBottom from "../../components/BlogCardBottom";
+import GeneralButton from "../../components/GeneralButton";
+import { AiOutlineInstagram } from 'react-icons/ai'
 
 
 
 const Home = () => (
     <HomeContainer>
-       <MainBanner/>
-        <main className="container flex-grow-1">
-            <div className="row row-cols-md-3 my-5">
+       <MainBanner/>    
+        <main className="container">
+            <div className="row row-cols-1 row-cols-md-3 my-5">
                 <div className="col">
                     <RoundCard
                     title="Vegetable"
@@ -50,7 +52,7 @@ const Home = () => (
             <div className="divisiont">
                 <h2 className="my-5">Our Products</h2>
             </div>
-            <div className="row row-cols-md-2 row-cols-lg-3 g-5 my-5">
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-5 g-4">
                 <div className="col d-flex">
                     <SquareCard
                     image={brocolis}
@@ -102,25 +104,25 @@ const Home = () => (
                 </div>
             </div>
         </main>
-            <ViewBanner/>
-        <main className="container flex-grow-1">
+        <ViewBanner/>
+        <main className="container ">
             <h2 className="my-5">The Blog</h2>
-            <div className="row row-cols-1 row-cols-lg-3 my-5 g-5">
-                <div className="col ">
+            <div className="row row-cols-1 row-cols-lg-3 my-5">
+                <div className="col d-flex">
                     <BlogCardTop
                     image={temperos}
                     title="Beauty With Organic Products"
                     description="Etiam at varius diam, id blandit erat. Suspendisse eget volutpat risus, id venenatis justo. Fusce elementum ligula elit. Duis ultricies ultrices nibh, a tincidunt risus pretium eleifend."
                     />
                 </div>
-                <div className="col ">
+                <div className="col d-flex ">
                     <BlogCardBottom
                      image={verdes}
                      title="Green Vegetables Are Good For Healthy"
                      description="Vivamus consectetur nulla mattis lorem ultricies, ac congue tellus consectetur. Vivamus sed purus volutpat, varius mauris id, tempus augue. Nuefd ans congue liquam."
                      />
                 </div>
-                <div className="col ">
+                <div className="col d-flex ">
                     <BlogCardTop image={sopa}
                     title="Refreshing Green Smoothie Recipe"
                     description="Praesent efficitur felis eu luctus vestibulum. In hac habitasse platea dictumst. Nam egestas eu nisl ac pellentesque. Duis congue suscipit lorem vel congue."
@@ -130,6 +132,10 @@ const Home = () => (
             
         </main>
         <FollowBanner/>
+        <Banner1 className="d-sm-block d-md-none"> <GeneralButton 
+                title="FOLLOW US">
+                    <AiOutlineInstagram />
+                </GeneralButton> </Banner1>       
         <Footer/>            
     </HomeContainer>
     

@@ -24,9 +24,9 @@ const About = () => (
             />   
             <div className="container">
                 <div className="row row-cols-1 ">
-                    <div className="d-flex col col-md-12">
+                    <div className="d-flex col col-md-12 mb-5 mb-md-0">
                         <WhoWeCard
-                        className="w-100"
+                        className="w-100  "
                         image={handsare}
                         title="Who We Are"
                         description="We are a manufacturing base of organic food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar."
@@ -43,7 +43,7 @@ const About = () => (
                     </div>
                 </div>
             </div>
-            <CountBanner/>   
+            <CountBanner />   
             <div className="container">
                 <h2 className="my-5">Our Team</h2>
                 <div className="row row-cols-md-3 my-5">
