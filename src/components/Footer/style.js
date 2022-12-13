@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.section`
-
+font-size:14px;
 line-height:40px;
 
 .list{
