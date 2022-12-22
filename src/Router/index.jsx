@@ -15,10 +15,10 @@ const Router = () => (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/quem-somos" element={<About/>}/>
-            <Route path="/produtos" element={<Shop/>}/>
-            <Route path="/produtos/*" element={<ShopDetail/>}/>
-            <Route path="/carrinho" element={<Cart/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/shop" element={<Shop/>}/>
+            <Route path="/shop/salad" element={<ShopDetail/>}/>
+            <Route path="/cart" element={<Cart/>}/>
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="/contact" element={<Contact/>}/> 
             <Route path="/*" element={<NotFound />}/> 

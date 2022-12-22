@@ -45,7 +45,6 @@ h2{
 export const BigTable = styled.table`
 
 input{
-    color: #fff;
     border-radius: 25px;
     border: 1px solid #97ae76;
     font-size: 14px;
@@ -53,6 +52,10 @@ input{
     line-height: 46px;
     align-self: center;
     
+
+    &:focus{
+        outline: none;
+    }
 }
 `
 
@@ -68,7 +71,7 @@ export const SmallTable = styled.table`
    
 
 input{
-    color: #fff;
+
     border-radius: 25px;
     border: 1px solid #97ae76;
     font-size: 14px;
@@ -77,6 +80,10 @@ input{
     align-self: center;
     width: 60px;
     height: 28px;
+
+    &:focus{
+        outline: none;
+    }
 }
 th{
 

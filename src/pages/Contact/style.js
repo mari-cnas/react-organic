@@ -19,10 +19,3 @@ width:100%;
 position:absolute;
 
 `
-export const CardContainer = styled.div`
-color: #97ae76;
-:hover{
-    color:white;
-}
-
-`

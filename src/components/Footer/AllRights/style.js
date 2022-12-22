@@ -10,5 +10,7 @@ export const RightsContainer = styled.section`
     list-style: none;
 }
 
-
+a:hover{
+color:white;
+}
 `

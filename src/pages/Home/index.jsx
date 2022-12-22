@@ -1,6 +1,5 @@
 
-import { Banner1, HomeContainer } from "./style";
-import MainBanner from "../../components/MainBanner";
+import { Banner1, BannerContainer, HomeContainer } from "./style";
 import Footer from "../../components/Footer";
 import SquareCard from "../../components/SquareCard";
 import RoundCard from "../../components/RoundCard";
@@ -10,7 +9,7 @@ import vegetable from '../../assets/green.png'
 import fruit from '../../assets/orange.png'
 import meat from '../../assets/meat.png'
 import brocolis from '../../assets/brocolis.png'
-import brasil from '../../assets/brasil.jpg'
+import basil from '../../assets/brasil.jpg'
 import lemon from '../../assets/lemon.jpg'
 import apple from '../../assets/apple.jpg'
 import onion from '../../assets/onion.jpg'
@@ -22,13 +21,27 @@ import BlogCardTop from "../../components/BlogCardTop";
 import BlogCardBottom from "../../components/BlogCardBottom";
 import GeneralButton from "../../components/GeneralButton";
 import { AiOutlineInstagram } from 'react-icons/ai'
+import useTitle from "../../hooks/useTitle";
+import { useEffect } from "react";
+import Header from "../../components/Header";
+import folhas from '../../assets/folhas.png'
 
 
 
-const Home = () => (
-    <HomeContainer>
-       <MainBanner/>    
-        <main className="container">
+const Home = () =>{
+
+const setTitle = useTitle()
+
+useEffect(() => {
+    setTitle();
+}, [setTitle]);
+    
+    return (
+        <>
+            
+        <BannerContainer className="h-100"><Header className="h-100" /> </BannerContainer>
+        <main >
+            <HomeContainer className="container"> 
             <div className="row row-cols-1 row-cols-md-3 my-5">
                 <div className="col">
                     <RoundCard
@@ -96,16 +109,16 @@ const Home = () => (
                 </div>
                 <div className="col d-flex">
                     <SquareCard
-                     image={brasil}
-                     title="Brasil"
+                     image={basil}
+                     title="Basil"
                      price="$1.55"
                      backgroundColor="white"
                      />
                 </div>
             </div>
-        </main>
+            </HomeContainer>
         <ViewBanner/>
-        <main className="container ">
+        <HomeContainer className="container">
             <h2 className="my-5">The Blog</h2>
             <div className="row row-cols-1 row-cols-lg-3 my-5">
                 <div className="col d-flex">
@@ -129,7 +142,7 @@ const Home = () => (
                     />
                 </div>
             </div>
-            
+            </HomeContainer>
         </main>
         <FollowBanner/>
         <Banner1 className="d-sm-block d-md-none"> <GeneralButton 
@@ -137,8 +150,8 @@ const Home = () => (
                     <AiOutlineInstagram />
                 </GeneralButton> </Banner1>       
         <Footer/>            
-    </HomeContainer>
     
+    </> 
 );
-
+}
 export default Home;

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import cover1 from '../../assets/coverbelow0.jpg'
+import folhas from '../../assets/folhas.png'
 
-export const HomeContainer = styled.section`
+export const HomeContainer = styled.div`
 
 h2{
     font-family: playfair display,serif;
@@ -27,3 +28,16 @@ display:flex;
 align-self:center;
 justify-content:center;
 `;
+
+export const BannerContainer = styled.div`
+  background-image: url(${folhas});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ `;

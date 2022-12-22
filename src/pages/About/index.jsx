@@ -12,9 +12,19 @@ import CountBanner from "../../components/CountBanner";
 import WhoWeCard from "../../components/WhoWeCard";
 import WhatWeCard from "../../components/WhatWe";
 import leaves from '../../assets/folhas2.jpg'
+import useTitle from "../../hooks/useTitle";
+import { useEffect } from "react";
 
 
-const About = () => (
+const About = () =>{
+const setTitle = useTitle()
+    
+useEffect(() => {
+    setTitle('About');
+}, [setTitle]);
+    
+    
+return (
     <AboutContainer>
         <Header/>
         <main > 
@@ -77,6 +87,6 @@ const About = () => (
     </AboutContainer>
 
 );
-    
+}
 export default About;
 

@@ -15,7 +15,7 @@ const Allrights = () => (
                 <li className="ms-3"> <img src={cc3} alt="logo" className=" img-fluid px-1 "/></li>
                 <li className="ms-3"> <img src={cc4} alt="logo" className=" img-fluid px-1 "/></li>
             </ul>        
-            <span className="mb-3 mb-md-0 order-2 order-lg-1"> Copyright © 2017 Designed by AuThemes. All rights reserved.</span>
+            <span className="mb-3 mb-md-0 order-2 order-lg-1"> Site by <a href="https://www.linkedin.com/in/marianacnascimento/" target="_blank">Mariana C. Nascimento.</a> All rights reserved.</span>
         </footer>
     </div>
     </RightsContainer>

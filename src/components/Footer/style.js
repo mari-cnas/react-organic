@@ -48,6 +48,11 @@ button{
 input{
     background-color:transparent;
     border:0;
+
+    &:focus {
+box-shadow: 0 0 0 0;
+outline: 0;
+}
 }
 
 `

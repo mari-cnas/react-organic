@@ -12,7 +12,7 @@ const Footer = () => (
             <div className=" row flex-column flex-lg-row my-5 w-100 justify-content-between">
                 <div className="col col-12 col-lg-4">
                     <ul className=" list px-0">
-                        <li className="pb-2"><img src={logo} alt="logo" /></li>
+                        <li className="pb-2"><Link to="/"><img src={logo} alt="logo" /></Link></li>
                         <li className="pb-2"><FiMapPin className="me-4"/> 379 5th Ave New York, NYC 10018</li>
                         <li className="pb-2"><BsTelephone className="me-4"/> (+1) 96 716 6879</li>
                         <li className="pb-2"><AiOutlineMail className="me-4"/>contact@site.com</li>
@@ -22,28 +22,28 @@ const Footer = () => (
                 <div className=" mx-lg-4">
                 <h5>SHOP</h5>
                     <ul className="d-flex flex-lg-column list px-0">
-                        <li className="me-4"><Link to="www.google.com" >Food</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Farm</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Health</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Organic</Link></li>
+                        <li className="me-4"><Link to="#" >Food</Link></li>
+                        <li className="me-4"><Link to="#" >Farm</Link></li>
+                        <li className="me-4"><Link to="#" >Health</Link></li>
+                        <li className="me-4"><Link to="#" >Organic</Link></li>
                         </ul> 
                     </div>      
                     <div className=" mx-lg-4">
                     <h5>SUPPORT</h5>
                     <ul className="d-flex flex-lg-column list px-0">
-                        <li className="me-4"><Link to="www.google.com" >Contact Us</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >FAQ</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Privacy Policy</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Blog</Link></li>
+                        <li className="me-4"><Link to="#" >Contact Us</Link></li>
+                        <li className="me-4"><Link to="#" >FAQ</Link></li>
+                        <li className="me-4"><Link to="#" >Privacy Policy</Link></li>
+                        <li className="me-4"><Link to="#" >Blog</Link></li>
                         </ul>
                         </div>  
                         <div className=" mx-lg-4">
                     <h5>MY ACCOUNT</h5>
                     <ul className="d-flex flex-lg-column list px-0 flex-wrap">
-                        <li className="me-4"><Link to="www.google.com" >Sign In</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >My Cart</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >My Wishlist</Link></li>
-                        <li className="me-4"><Link to="www.google.com" >Check Out</Link></li>
+                        <li className="me-4"><Link to="#" >Sign In</Link></li>
+                        <li className="me-4"><Link to="#" >My Cart</Link></li>
+                        <li className="me-4"><Link to="#" >My Wishlist</Link></li>
+                        <li className="me-4"><Link to="#" >Check Out</Link></li>
                     </ul>   
                     </div>  
                     </div>
