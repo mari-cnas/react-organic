@@ -85,12 +85,12 @@ const ShopDetail = () => {
                     </div>
                 </div>
                 <div className="row flex-column flex-lg-row">
-                    <div className=" col">
+                    <div className=" col mb-5">
                     { showDescription ? <ProductDescription /> : null }
                     {showInfo ? <ProductInfos /> : null}
                     { showReview ? <Review/> : null }                         
                     </div>
-                    <div className=" col">
+                    <div className=" col ">
                         <ul className="list-group">
                             <li className="d-flex list-group-item justify-content-between border-0" onClick={() => setShowDescription(true) & setShowReview(false) & setShowInfo(false) } >
                                 <p>Description</p>
@@ -100,7 +100,7 @@ const ShopDetail = () => {
                                 </div>
                             </li>
                             <hr />
-                            <li className="d-flex list-group-item justify-content-between border-0" onClick={() => setShowInfo(true) & setShowDescription(false) & setShowReview(false)} >
+                            <li className="d-flex list-group-item justify-content-between border-0 " onClick={() => setShowInfo(true) & setShowDescription(false) & setShowReview(false)} >
                                 <p>Additional Information</p>
                                 <div className="d-flex nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
