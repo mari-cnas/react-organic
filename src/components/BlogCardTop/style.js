@@ -28,13 +28,6 @@ export const ImgBox = styled.div`
    background-size:cover;
    background-position:center;
    
- 
-   @media (min-width:320px) { 
-    height:100%;}
 
-
-    @media (min-width:1024px) { 
-        height:60%;
-        width:auto;}
 `;
 

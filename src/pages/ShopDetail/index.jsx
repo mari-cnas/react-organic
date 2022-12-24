@@ -65,15 +65,17 @@ const ShopDetail = () => {
                         <p>$2.00</p>
                         <hr />
                         <p>Duis vestibulum ante velit. Pellentesque orci felis, pharetra ut pharetra ut, interdum at mauris. Aenean efficitur aliquet libero sit amet scelerisque. Suspendisse efficitur mollis eleifend. Aliquam tortor nibh, venenatis quis sem dapibus, varius egestas lorem a sollicitudin.</p>
-                        <div className="d-flex justify-content-between">
-                            <ul className="list-group list-group-horizontal">
+                        <div className="d-flex flex-column flex-md-row justify-content-start justify-content-md-between ">
+                            <ul className="list-group list-group-horizontal my-1">
                                 <LessBtn disabled={productQuantity === 1} onClick={() => handleInputChange(productQuantity - 1)}>-</LessBtn>
                                 <input type="number" onChange={(e) => handleInputChange(e.nativeEvent.target.value)} value={productQuantity}/>
                                 <AddBtn onClick={() => handleInputChange(productQuantity + 1)}>+</AddBtn>
                             </ul>
-                            <Link to="/cart" ><SquareButton
+                           
+                            <Link to="/cart" className="d-flex my-1"><SquareButton
                                 title="ADD TO CART" /></Link>
-                            <HeartBtn><AiFillHeart size={22} /></HeartBtn>
+                            <HeartBtn className=" my-1"><AiFillHeart size={22} /></HeartBtn>
+                          
                         </div>
                         <hr />
                         <p>Categories: <a href="#">Food</a></p>
@@ -118,7 +120,7 @@ const ShopDetail = () => {
                     </div>
                 </div>
                 <h2 className="my-5">Related Products</h2>
-                <div className="row mb-5">
+                <div className="row row-cols-2 row-cols-md-4 mb-5 g-2">
                     <div className="col">
                             <SquareCard
                                 image={salad}

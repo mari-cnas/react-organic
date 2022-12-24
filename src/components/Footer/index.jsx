@@ -47,7 +47,7 @@ const Footer = () => (
                     </ul>   
                     </div>  
                     </div>
-                <div className="col col-7 col-lg-3">
+                <div className="col col-12 col-md-7 col-lg-3">
                     <ul className="list px-0">
                         <h5>NEWSLETTER</h5> 
                         <p>Subscribe now to get daily updates</p>
