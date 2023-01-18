@@ -13,37 +13,37 @@ const Footer = () => (
                 <div className="col col-12 col-lg-3 me-5">
                     <ul className=" list px-0">
                         <li className="pb-2"><Link to="/"><img src={logo} alt="logo" /></Link></li>
-                        <li className="pb-2"><FiMapPin /> 379 5th Ave New York, NYC 10018</li>
-                        <li className="pb-2"><BsTelephone /> (+1) 96 716 6879</li>
-                        <li className="pb-2"><AiOutlineMail />contact@site.com</li>
+                        <li className="pb-2 "><FiMapPin className="me-2"/> 379 5th Ave New York, NYC 10018</li>
+                        <li className="pb-2 "><BsTelephone className="me-2"/> (+1) 96 716 6879</li>
+                        <li className="pb-2 "><AiOutlineMail className="me-2"/>contact@site.com</li>
                     </ul>
                 </div>
                 <div className="col d-flex flex-column flex-lg-row col-12 col-lg-5 justify-content-between me-4">
                     <div >
                     <h5>SHOP</h5>
                     <ul className="d-flex flex-lg-column list px-0 ">
-                        <li ><Link to="#" >Food</Link></li>
-                        <li ><Link to="#" >Farm</Link></li>
-                        <li ><Link to="#" >Health</Link></li>
-                        <li ><Link to="#" >Organic</Link></li>
+                        <li ><Link to="#" className="me-4">Food</Link></li>
+                        <li ><Link to="#" className="me-4">Farm</Link></li>
+                        <li ><Link to="#" className="me-4">Health</Link></li>
+                        <li ><Link to="#" className="me-4">Organic</Link></li>
                         </ul> 
                     </div>      
                     <div >
                     <h5>SUPPORT</h5>
                     <ul className="d-flex flex-lg-column list px-0 ">
-                        <li ><Link to="#" >Contact Us</Link></li>
-                        <li ><Link to="#" >FAQ</Link></li>
-                        <li ><Link to="#" >Privacy Policy</Link></li>
-                        <li ><Link to="#" >Blog</Link></li>
+                        <li ><Link to="#" className="me-4">Contact Us</Link></li>
+                        <li ><Link to="#" className="me-4">FAQ</Link></li>
+                        <li ><Link to="#" className="me-4">Privacy Policy</Link></li>
+                        <li ><Link to="#" className="me-4">Blog</Link></li>
                         </ul>
                         </div>  
                         <div >
                     <h5>MY ACCOUNT</h5>
                     <ul className="d-flex flex-lg-column list px-0 flex-wrap ">
-                        <li ><Link to="#" >Sign In</Link></li>
-                        <li ><Link to="#" >My Cart</Link></li>
-                        <li ><Link to="#" >My Wishlist</Link></li>
-                        <li ><Link to="#" >Check Out</Link></li>
+                        <li ><Link to="#" className="me-4">Sign In</Link></li>
+                        <li ><Link to="#" className="me-4">My Cart</Link></li>
+                        <li ><Link to="#" className="me-4">My Wishlist</Link></li>
+                        <li ><Link to="#" className="me-4">Check Out</Link></li>
                     </ul>   
                     </div>  
                     </div>
