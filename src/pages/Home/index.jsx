@@ -145,10 +145,13 @@ useEffect(() => {
             </HomeContainer>
         </main>
         <FollowBanner/>
-        <Banner1 className="d-sm-block d-md-none"> <GeneralButton 
+            <Banner1 className="d-sm-block d-md-none">
+                <div className="d-flex  justify-content-center align-items-center h-100">
+                <GeneralButton 
                 title="FOLLOW US">
                     <AiOutlineInstagram />
-                </GeneralButton> </Banner1>       
+                    </GeneralButton></div> </Banner1>  
+                    
         <Footer/>            
     
     </> 
